@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/styles/Suma.css';
 
 export default function Suma() {
     const [input, setInput] = React.useState({
@@ -20,19 +21,19 @@ export default function Suma() {
 
     return (
 
-        <div>
-            <h1>Suma de dos numeros</h1>
+        <div className="container">
+            <div><h1>Suma de dos numeros</h1></div>
             <div>
                 <div>
-                    <p className='margen-none'>Introduzca los numeros a sumar</p>
+                    <p className='margen-none'>Introduce los numeros a sumar</p>
                     <div className='center_input marginTop'>
-                        <input className='bold-tamaño'
+                        <input className='form'
                             onChange={handleInput}
                             name="num1"
                             value={input.num1}
                             type="text"
-                        ></input>
-                        <input className='bold-tamaño'
+                        ></input> +
+                        <input className='form'
                             onChange={handleInput}
                             name="num2"
                             value={input.num2}
@@ -41,10 +42,11 @@ export default function Suma() {
                     </div>
                 </div>
                 <div className='center_div'>
-                    <button onClick={suma}>Sumar</button>
+                    <button className="boton" onClick={suma}>Sumar</button>
                 </div>
                 <div>
-                    <h4 className='result'>Resultado: <span className='result-color'> {result} </span> </h4>
+                    <h4>=</h4>
+                    <h4 className='result'> <span className='result-color'> {result} </span> </h4>
                 </div>
 
             </div>

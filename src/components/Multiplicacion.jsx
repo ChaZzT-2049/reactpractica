@@ -24,14 +24,14 @@ export default function Multiplicacion() {
             <h1>Multiplicacion de dos numeros</h1>
             <div>
                 <div>
-                    <p className='margen-none'>Introduzca los numeros a multiplicar</p>
+                    <p className='margen-none'>Introduce los numeros a multiplicar</p>
                     <div className='center_input marginTop'>
                         <input className='areatext'
                             onChange={handleInput}
                             name="num1"
                             value={input.num1}
                             type="text"
-                        ></input>
+                        ></input>+
                         <input className='areatext'
                             onChange={handleInput}
                             name="num2"
@@ -44,7 +44,8 @@ export default function Multiplicacion() {
                     <button className='boton' onClick={multiplicar}>Multiplicar</button>
                 </div>
                 <div className="resultado">
-                    <h4 className='result'>Resultado: <span className='result-color'> {result} </span> </h4>
+                    <h4>=</h4>
+                    <h4 className='result'><span className='result-color'> {result} </span> </h4>
                 </div>
             </div>
         </div>

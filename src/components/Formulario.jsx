@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/styles/Formulario.css';
 
 class Formulario extends React.Component {
     constructor(props) {
@@ -28,30 +29,30 @@ class Formulario extends React.Component {
 
     render() {
         return (
-            <div className="border-blue">
-                <h1 className="contenido">Formulario de Contacto</h1>
+            <div className="container">
                 <form className="formulario">
+                    <h1>Formulario de Contacto</h1>
                     <fieldset>
                         <p>Favor de rellenar todo los campos</p>
                         <div className="content">
                             <div className="formula">
-                                <label>Nombre: </label>
+                                <label className="etiqueta"><b>Nombre:</b></label>
                                 <input className="input-text" type="text" placeholder="Introduzca su nombre" />
                             </div>
                             <div className="formula">
-                                <label>Teléfono: </label>
+                                <label className="etiqueta"><b>Numero:</b> </label>
                                 <input className="input-text" type="tel" placeholder="Introduzca su numero" />
                             </div>
                             <div className="formula">
-                                <label>Correo: </label>
+                                <label className="etiqueta"><b>Correo:</b> </label>
                                 <input className="input-text" type="text" placeholder="Introduzca su correo" />
                             </div>
                             <div className="formula">
-                                <label className="centraTx">Detalles: </label>
-                                <textarea className="input-text" placeholder="Detalles de contacto"></textarea>
+                                <label className="etiqueta"><b>Detalles:</b></label>
+                                <input className="input-text" placeholder="Detalles de contacto"></input>
                             </div>
                         </div>
-                        <div className="flex-boton">
+                        <div className="subir">
                             <input className="boton input-boton" type="button" value="Enviar" />
                         </div>
                     </fieldset>

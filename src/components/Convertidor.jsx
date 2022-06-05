@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/styles/Convertidor.css';
 
 export default function Convertidor() {
     const [input, setInput] = React.useState({
@@ -23,12 +24,12 @@ export default function Convertidor() {
 
     return (
 
-        <div>
+        <div className="container">
             <h1>Convertidor de Temperatura: Celsius-Fahrenheit</h1>
             <div className='convertidor'>
                 <div>
                     <p className='contenido'>Ingrese una temperatura</p>
-                    <div className='center_div marginTop'>
+                    <div className='temperatura'>
                         <input className='bold-tamaño'
                             onChange={handleInput}
                             name="valor"
@@ -39,11 +40,12 @@ export default function Convertidor() {
                 </div>
                 <h3 className='centerText centerText'>Convertir a:</h3>
                 <div className='center_div'>
-                    <button onClick={Celsius}>Celsius</button>
-                    <button onClick={Fahrenheit}>Fahrenheit</button>
+                    <button className="cel" onClick={Celsius}>Celsius</button>
+                    <button className="fah" onClick={Fahrenheit}>Fahrenheit</button>
                 </div>
                 <div>
-                    <h4 className='result'>Resultado: <span className='result-color'> {result} </span> </h4>
+                    <h4>=</h4>
+                    <h4 className='result'> <span className='result-color'> {result} </span> </h4>
                 </div>
             </div>
         </div>

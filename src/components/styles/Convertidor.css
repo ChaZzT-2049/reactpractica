@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+}
+.cel{
+    background-color: rgb(53, 177, 177);
+    border-radius: 10px;
+    border-color: aquamarine;
+    color: white;
+    margin: 5px;
+}
+.fah{
+    background-color: rgb(53, 177, 177);
+    border-radius: 10px;
+    border-color: aquamarine;
+    color: white;
+    margin: 5px;
+}

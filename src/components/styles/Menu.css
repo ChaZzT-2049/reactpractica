@@ -1,6 +1,7 @@
 .titulo{
     text-align: center;
     background-color: rgb(58, 55, 55);
+    padding: 1px;
 }
 .titulo h1{
     color: white;

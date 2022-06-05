@@ -4,7 +4,7 @@ import '../components/styles/Menu.css';
 
 const Menu = () => {
     return (
-        <div>
+        <div className="contenedor">
             <div className="titulo"><h1>Formularios en React</h1></div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
