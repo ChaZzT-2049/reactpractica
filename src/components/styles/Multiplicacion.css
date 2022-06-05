@@ -1,0 +1,16 @@
+.container{
+    text-align: center;
+}
+.areatext {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.boton{
+    background-color: rgb(53, 177, 177);
+    border-radius: 10px;
+    border-color: aquamarine;
+    color: white;
+}
+.resultado{
+    text-align: center;
+}

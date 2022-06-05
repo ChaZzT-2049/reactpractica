@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../components/styles/Menu.css';
 
 const Menu = () => {
     return (
         <div>
+            <div className="titulo"><h1>Formularios en React</h1></div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

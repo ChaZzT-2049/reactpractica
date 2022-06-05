@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/styles/Multiplicacion.css';
 
 export default function Multiplicacion() {
     const [input, setInput] = React.useState({
@@ -19,19 +20,19 @@ export default function Multiplicacion() {
     };
 
     return (
-        <div>
+        <div className="container">
             <h1>Multiplicacion de dos numeros</h1>
             <div>
                 <div>
                     <p className='margen-none'>Introduzca los numeros a multiplicar</p>
                     <div className='center_input marginTop'>
-                        <input className='bold-tamaño'
+                        <input className='areatext'
                             onChange={handleInput}
                             name="num1"
                             value={input.num1}
                             type="text"
                         ></input>
-                        <input className='bold-tamaño'
+                        <input className='areatext'
                             onChange={handleInput}
                             name="num2"
                             value={input.num2}
@@ -39,10 +40,10 @@ export default function Multiplicacion() {
                         ></input>
                     </div>
                 </div>
-                <div className='center_div'>
-                    <button onClick={multiplicar}>Multiplicar</button>
-                </div>
                 <div>
+                    <button className='boton' onClick={multiplicar}>Multiplicar</button>
+                </div>
+                <div className="resultado">
                     <h4 className='result'>Resultado: <span className='result-color'> {result} </span> </h4>
                 </div>
             </div>
